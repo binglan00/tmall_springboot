@@ -13,10 +13,13 @@ public class WebMvcConfigurer extends WebMvcConfigurerAdapter {
         return new LoginInterceptor();
     }
 
+
     @Bean
     public OtherInterceptor getOtherIntercepter() {
         return new OtherInterceptor();
     }
+
+
 
     @Override
     public void addInterceptors(InterceptorRegistry registry){
